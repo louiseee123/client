@@ -1,0 +1,21 @@
+<h2 mat-dialog-title>Enter new Entity</h2>
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  <mat-dialog-content>
+    <!-- Form -->
+    <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="Enter Name" />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Content</mat-label>
+      <textarea matInput formControlName="Description"></textarea>
+    </mat-form-field>
+    <!-- End of Form -->
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-button>Cancel</button>
+    <button type="submit" mat-button>Submit</button>
+  </mat-dialog-actions>
+</form>
